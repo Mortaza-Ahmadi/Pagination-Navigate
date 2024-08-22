@@ -4,7 +4,6 @@ import {
   Card,
   LoadingOverlay,
   Table,
-  Pagination,
   Center,
   Select,
   Container,
@@ -37,9 +36,9 @@ function TodoPages() {
   }
 
   return (
-    <Container size="md" sx={{ padding: '20px' }}>
+    <Container size="md" sx={{ padding: "20px" }}>
       <Title order={2} align="center" mb="lg">
-        Todo List
+        Pagination
       </Title>
       <Select
         onChange={(value) => setLimit(value)}
@@ -52,7 +51,7 @@ function TodoPages() {
           { value: "30", label: "30 items per page" },
           { value: "50", label: "50 items per page" },
         ]}
-        sx={{ maxWidth: 200, marginBottom: '20px' }}
+        sx={{ maxWidth: 200, marginBottom: "20px" }}
       />
 
       <Card shadow="sm" padding="lg" radius="md" withBorder>
